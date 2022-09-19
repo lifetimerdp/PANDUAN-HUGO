@@ -1,0 +1,12 @@
+# membuat folder web hugo
+- hugo new site namaweb
+- cd namaweb
+- git init
+
+# membuat tema baru
+- hugo new theme namatema
+- layouts berisi folder dan file untuk website
+- layouts/_default berisi halaman single
+- layouts/partials berisi bagian-bagian dari web seperti header, footer, section dll
+- layouts/_default/baseof.html adalah file dasar untuk mengatur kode bawaan setiap halaman html yang dibuat
+- 
