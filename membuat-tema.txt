@@ -3,6 +3,7 @@
 - cd namaweb
 - git init
 
+
 # membuat tema baru
 - hugo new theme namatema
 
@@ -12,9 +13,38 @@
     - layouts/partials berisi bagian-bagian dari web seperti header, footer, section dll
     - layouts/_default/baseof.html adalah file dasar untuk mengatur kode bawaan setiap halaman html yang dibuat
 
+
 # mengatur baseof.html
 - Kegunaan file baseof.html adalah untuk membuat kode html default untuk setiap halaman atau file berformat .html yang dibuat.
   Ini seperti struktur dasar atau pondasi untuk setiap halaman.
 
-# memanggil parameter atau variable dari config.toml
 
+# memanggil parameter atau variable dari config.toml
+- Gunakan kurung kurawal double {{ .NamaVariablenya }}
+- Misalnya memanggil title dari config.toml
+  {{ .Title }}
+
+
+# looping data semua halaman format .md yang sudah dibuat
+  <ul>
+  {{ range .Site.RegularPages }} artinya looping semua page.md yang kita buat. Ini seperti membuat sebuah for loop
+    <li>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+        <span>{{.Date.Format "Monday, January 2, 2006"}}</span>
+    </li>
+  {{ end }}
+  </ul>
+
+
+# looping data berdasarkan folder tertentu
+  <ul>
+  {{ range where .Site.RegularPages "Section" "namafolder" }} artinya looping semua page.md yang ada didalam folder tujuan
+    <li>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+        <span>{{.Date.Format "Monday, January 2, 2006"}}</span>
+    </li>
+  {{ end }}
+  </ul>
+
+
+# 
