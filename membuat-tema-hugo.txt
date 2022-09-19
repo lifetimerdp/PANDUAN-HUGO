@@ -46,5 +46,7 @@
   {{ end }}
   </ul>
 
+| Sumber informasi: https://gohugo.io/variables/page |
+
 
 # 
