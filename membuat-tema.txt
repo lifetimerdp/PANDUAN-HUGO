@@ -5,8 +5,16 @@
 
 # membuat tema baru
 - hugo new theme namatema
-- layouts berisi folder dan file untuk website
-- layouts/_default berisi halaman single
-- layouts/partials berisi bagian-bagian dari web seperti header, footer, section dll
-- layouts/_default/baseof.html adalah file dasar untuk mengatur kode bawaan setiap halaman html yang dibuat
-- 
+
+  keterangan:
+    - layouts berisi folder dan file untuk website
+    - layouts/_default berisi halaman single
+    - layouts/partials berisi bagian-bagian dari web seperti header, footer, section dll
+    - layouts/_default/baseof.html adalah file dasar untuk mengatur kode bawaan setiap halaman html yang dibuat
+
+# mengatur baseof.html
+- Kegunaan file baseof.html adalah untuk membuat kode html default untuk setiap halaman atau file berformat .html yang dibuat.
+  Ini seperti struktur dasar atau pondasi untuk setiap halaman.
+
+# memanggil parameter atau variable dari config.toml
+
