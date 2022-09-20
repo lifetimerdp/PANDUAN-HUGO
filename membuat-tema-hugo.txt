@@ -46,7 +46,22 @@
   {{ end }}
   </ul>
 
+baseof.html => untuk mengatur setiap file .html misalnya kode dasar yang ada setiap membuat file.html
+list.html   => untuk mengatur setiap halaman. misalnya halaman /blog atau /belajar
+single.html => untuk mengatur setiap postingan.md
+
 | Sumber informasi: https://gohugo.io/variables/page |
+
+
+# front matter
+- front matter adalah syntax yang digunakan untuk mengatur data pada postingan kita. Contohnya seperti:
+  ---
+  title: "Mari Belajar Hugo"
+  date: 2022-09-19T15:25:14+07:00
+  draft: false
+  ---
+
+sumber: https://gohugo.io/content-management/front-matter
 
 
 # 
