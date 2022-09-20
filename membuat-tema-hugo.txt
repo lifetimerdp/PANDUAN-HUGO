@@ -61,7 +61,7 @@ single.html => untuk mengatur setiap postingan.md
   draft: false
   ---
 
-sumber: https://gohugo.io/content-management/front-matter
+sumber informasi: https://gohugo.io/content-management/front-matter
 
 
 # 
