@@ -102,4 +102,11 @@ draft: false
 - hugo new blog/post3.md
 
 
+# Tagging atau kategori
+
+sumber: https://gohugo.io/content-management/taxonomies/
+sumber: https://gohugo.io/variables/taxonomy
+
+
 # 
+
