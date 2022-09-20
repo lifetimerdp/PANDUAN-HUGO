@@ -109,5 +109,11 @@ sumber: https://gohugo.io/variables/taxonomy
 
 
 # Ramah SEO
+- atur title halaman
+- atur meta description
+- tambahkan meta card twitter
+- etc
 
+
+# 
 
