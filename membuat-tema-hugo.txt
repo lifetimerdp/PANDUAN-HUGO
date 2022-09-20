@@ -64,4 +64,42 @@ single.html => untuk mengatur setiap postingan.md
 sumber informasi: https://gohugo.io/content-management/front-matter
 
 
+# cara memanggil variable dari file.md atau file postingan ke file.html lainnya
+
+misalnya: post.md
+---
+title: "Mari Belajar Hugo"
+date: 2022-09-19T15:25:14+07:00
+categories: "teknology"
+img_first: "https://link_img.png"
+---
+
+saya mau manggil img_first di single.html
+<img src='{{ .Params.img_first }}' alt='' width='500'>
+
+jika ingin menerapkan if dan else. caranya seperti dibawah ini
+------------------------------------------------------
+  {{ if isset .Params "img_first" }}
+  <img src="{{ .Params.img_first }}" alt="" width="400">
+  {{ else }}
+  Gambar Kosong
+  {{ end }}
+------------------------------------------------------
+sumber: https://gohugo.io/variables/page/#page-level-params
+
+
+# atur konfigurasi default untuk setiap file.md
+- hapus _default.md di archetypes dan buka default.md di themes/doni/archetypes/default.md
+- sesuaikan dengan kebutuhan, misalnya
+
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+Tags:
+draft: false
+---
+
+- hugo new blog/post3.md
+
+
 # 
