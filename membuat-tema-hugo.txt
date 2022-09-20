@@ -108,5 +108,6 @@ sumber: https://gohugo.io/content-management/taxonomies/
 sumber: https://gohugo.io/variables/taxonomy
 
 
-# 
+# Ramah SEO
+
 
