@@ -34,11 +34,6 @@ sumber: https://gohugo.io/functions
 
 
 2.2 Function untuk operator matematika
-| Fungsi | Keterangan                   |  Contoh                  |
-|  add   | Menambahkan dua angka.       | {{add 1 2}} -> 3         |
-         | Jika salah satu angkanya
-           adalah float, hasilnya
-           adalah float. 
 - add (penjumlahan)
 {{ add 1 2 }} -> 3
 {{ add 1 2.1 }} -> 3.1
@@ -123,8 +118,42 @@ sumber: https://gohugo.io/functions
 
 
 
-2.4 
+2.4 Function untuk mengambil elemen dari sebuah folder, file, atau url
+- path.Base (mengambil elemen paling akhir dan tanpa menghapus ekstensi file)
+{{ path.Base "layouts/_default/baseof.html" }} => "baseof.html"
+
+- path.BaseName (mengambil elemen paling akhir dan menghapus ekstensi jika ada)
+{{ path.BaseName "layouts/_default/baseof.html" }} => "baseof"
+
+- path.Dir (mengambil elemen, kecuali elemen paling akhir)
+{{ path.Dir "a/news.html" }} => "a"
+{{ path.Dir "news.html" }} => "."
+{{ path.Dir "a/b/c" }} => "a/b"
+{{ path.Dir "/x/y/z" }} => "/x/y"
+
+- path.Ext (hanya mengambil ekstensi file)
+{{ path.Ext "a/b/c/news.html" }} => ".html"
+
+- path.Join (menggabungkan jalur folder atau file)
+{{ path.Join "partial" "news.html" }} => "partial/news.html"
+{{ path.Join "foo/baz" "bar" }} => "foo/baz/bar"
+
+- path.Split (memecah jalur folder dan file)
+{{ $dirFile := path.Split "a/news.html" }} → $dirFile.Dir → "a/", $dirFile.File → "news.html"
+{{ $dirFile := path.Split "news.html" }} → $dirFile.Dir → "", $dirFile.File → "news.html"
+{{ $dirFile := path.Split "a/b/c" }} → $dirFile.Dir → "a/b/", $dirFile.File →  "c"
+
+
+
+2.5 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 # membuat folder web hugo
 - hugo new site namaweb
