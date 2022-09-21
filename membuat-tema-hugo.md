@@ -3,7 +3,7 @@ Tutorial dasar menggunakan hugo
 sumber belajar: https://gohugo.io/templates/introduction
 
 1. Variable
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 1.1 Cara membuat variable di hugo
 $variable_name := "ini adalah isi variable atau valuenya"
 
@@ -21,12 +21,20 @@ $halaman := "ini halaman biasa"
 {{ end }}
 
 
-1.4 Varible yang sudah dibuatkan golang
+1.4 Varible default atau variable yang sudah dibuatkan hugo
 sumber: https://gohugo.io/variables
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-1.5 
+2. Function
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+2.1 Function bawaan / default
+sumber: https://gohugo.io/functions
 
+2.2 
+| Header Column One | Header Column Two | Header Column Three | Header Column Four |
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
