@@ -1,3 +1,37 @@
+Tutorial dasar menggunakan hugo
+
+sumber belajar: https://gohugo.io/templates/introduction
+
+1. Variable
+
+1.1 Cara membuat variable di hugo
+$variable_name := "ini adalah isi variable atau valuenya"
+
+
+1.2 Cara memanggil variable yang sudah dibuat
+{{ $variable_name }}
+
+
+1.3 Mengubah nilai variable
+$halaman := "ini halaman biasa"
+<h1>{{ $halaman }}</h1>
+{{ if .IsHome }}
+  $halaman = "ini halaman home"   => Gunakan tanda "=" untuk mendefinisikan ulang variable.
+  <h1>{{ $halaman }}</h1>
+{{ end }}
+
+
+1.4 Varible yang sudah dibuatkan golang
+sumber: https://gohugo.io/variables
+
+
+1.5 
+
+
+
+
+
+
 # membuat folder web hugo
 - hugo new site namaweb
 - cd namaweb
