@@ -176,6 +176,44 @@ sumber: https://gohugo.io/functions/lang
 {{ partial "header.html" }} -> "layouts/partials/header.html"
 
 
+[ 4. Logika ]
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+4.1 If Condition
+{{ if kondisinya }}
+
+{{ else if kondisi kedua }}
+
+{{ else }}
+
+{{ end }}
+
+
+4.2 Range untuk pengulangan data
+- Print data array
+{{ range $array }}
+    {{ . }}      Titik untuk mengeluarkan output semua data yang terdapat dalam $array
+{{ end }}
+
+
+- Mengambil data indeks dan value $array
+{{ range $array_index, $array_value := $array }}
+    {{ $array_index }} -- {{ $array_value }}
+{{ end }}
+
+
+- Array dengan kondisi if
+{{ range $array }}
+     {{ . }}
+{{ else }}
+     Array kosong!
+{{ end }}
+
+
+4.3 
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
