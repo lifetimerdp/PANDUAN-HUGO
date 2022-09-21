@@ -149,7 +149,30 @@ sumber: https://gohugo.io/functions
 sumber: https://gohugo.io/functions/lang
 
 
-2.6 Function 
+2.6 Function untuk menghitung string
+- strings.Count
+{{ "aaabaab" | strings.Count "a" }}	-> 5
+{{ "aaabaab" | strings.Count "aa" }}	-> 2
+{{ "aaabaab" | strings.Count "aaa" }}	-> 1
+{{ "aaabaab" | strings.Count "" }}	-> 8    jika yang ditargetkan adalah string kosong, maka nilainya = 1 + jumlah seluruh string
+
+
+2.7 Function untuk mengecek string terakhir
+{{ $pathPdf := "/source/pdf/file.pdf" }}
+{{ strings.HasSuffix $pathPdf "pdf" }} -> true
+{{ strings.HasSuffix $pathPdf "txt" }} -> false
+
+
+2.8 Function untuk mengubah spasi di string menjadi tanda penghubung -
+{{ anchorize "This is a header" }} --> "this-is-a-header"
+{{ anchorize "This is also    a header" }} --> "this-is-also----a-header"
+
+
+2.9 Function untuk membuat string yang sama berulang kali
+{{ strings.Repeat 3 "yo"}} -> "yoyoyo"
+
+
+3.0 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
