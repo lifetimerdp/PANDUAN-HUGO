@@ -35,7 +35,7 @@ format file markdown:   nama-file.md
     > "Kucingku bernama hebe.
        Dia sangat lucu :)"
        
-    Note: Jika terdapat baris kosong, gunakan > lagi maka blockquote akan menjadi 1
+    Note: Jika terdapat baris kosong, gunakan > lagi (baris kosong dan paragraf selanjutnya) maka blockquote akan menjadi 1
     
     
 10. List tak-terurut
@@ -66,6 +66,7 @@ format file markdown:   nama-file.md
     
      Harga sepatu mulai dari 50 ribu sampai dengan 1 juta rupiah.
      Sesuaikan dengan kemampuan anda.
+     
     2. Harga sandal
 
      Harga sandal relatif murah jika dibandingkan dengan harga sepatu.
