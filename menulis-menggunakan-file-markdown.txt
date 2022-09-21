@@ -74,4 +74,58 @@ format file markdown:   nama-file.md
 
     Note: setiap ingin membuat paragraf di dalam list. Harus membuat baris kosong 1 dan spasi sekali diawal paragraf.
     
-14. 
+14. Jarak lembut atau soft breaks (Gunakan spasi 2 kali di akhir paragraf)
+    
+    Paragraf pertama lorem ipsum sume te gake youon.  
+    Paragraf kedua 
+    
+15. Membuat block kode
+    
+    contoh:
+    ```
+    <DOCTYPE html>
+    <html>
+        <head></head>
+        <body></body>
+    </html>
+    ```
+    
+    Kode block dengan highlight. Tambahkan nama bahasanya atau ekstensi dibelakang backtick awal (mendukung bahasa apapun)
+    ```html
+    <DOCTYPE html>
+    <html>
+        <head></head>
+        <body></body>
+    </html>
+    ```
+    
+    ```json
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 25
+    }
+    ```
+
+16. Tabel
+    | judul 1 | judul 2 | judul 3 |
+    |---------|---------|---------|
+    | isi 1   | isi 2   | isi 3   |
+    | isi 1.1 | isi 2.1 | isi 3.1 |
+    
+    saran: tidak perlu rapi seperti diatas, seperti dibawah ini juga bisa
+    
+    |judul 1|judul 2|judul 3|
+    |isi 1|isi 2|isi 3|
+    |isi 1.1|isi 2.1|isi 3.1|
+    
+    Hasil akhirnya sama saja.
+    
+17. Membuat tabel rata kanan, tengah, atau kiri
+    |  judul 1  |   judul 2   |   judul 3  |
+    |   :---    |    :---:    |    ---:    |
+    | rata kiri | rata tengah | rata kanan |
+    |           |             |            |
+
+
+18. 
