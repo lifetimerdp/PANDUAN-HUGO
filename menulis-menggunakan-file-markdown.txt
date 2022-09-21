@@ -1,9 +1,9 @@
 format file markdown:   nama-file.md
 
-1.  Garis Miring ( _kata_ )
+1.  Garis Miring 
     _Kucing adalah hewan yang paling banyak di pelihara_
     
-2.  Huruf tebal atau Bold ( **kata** )
+2.  Huruf tebal atau Bold
     **Anjing adalah hewan yang setia**
     
 3.  Tebal dan miring
@@ -17,4 +17,19 @@ format file markdown:   nama-file.md
     ##### Header five   => h5
     ###### Header six   => h6
     
-5. 
+5.  Membuat link
+    [text](https://url.com)
+    
+6.  Menyiapkan link agar dapat digunakan berkali-kali
+    Kucing adalah [hewan][refHewan] kategori mamalia. [Hewan][refHewan] mamalia adalah [hewan][refHewan] yang menyusui dan melahirkan.
+    [refHewan]: https://id.wikipedia.org/wiki/Hewan
+    
+7.  Membuat Gambar
+    ![Text alt](https://www.url.com/gambar1.png)
+    
+8.  Gambar yang dapat digunakan berkali-kali
+    ![Kucing][cat] adalah hewan kategori mamalia. ![Kucing][cat] banyak dipelihara manusia karena tidak berbahaya.
+    [cat]: https://id.wikipedia.org/wiki/Kucing
+    
+9. 
+    
