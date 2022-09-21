@@ -31,5 +31,46 @@ format file markdown:   nama-file.md
     ![Kucing][cat] adalah hewan kategori mamalia. ![Kucing][cat] banyak dipelihara manusia karena tidak berbahaya.
     [cat]: https://id.wikipedia.org/wiki/Kucing
     
-9. 
+9.  Kutipan atau Blockquote ( Gunakan tanda > di paling awal kata )
+    > "Kucingku bernama hebe.
+       Dia sangat lucu :)"
+       
+    Note: Jika terdapat baris kosong, gunakan > lagi maka blockquote akan menjadi 1
     
+    
+10. List tak-terurut
+    * list1
+    * list2
+    * dst
+    
+11. List angka
+    1. Daftar pertama
+    2. Kedua
+    3. Ketiga
+    4. Dst
+    
+12. Sub daftar tak-terurut
+    * Resep ikan bakar
+        * kunyit
+        * bawang
+            * merah
+            * putih
+        * Jeruk nipis
+        * Kecap bangau
+        * Garam
+        * Micin
+    
+13. Paragraf di antara list
+
+    1. Harga sepatu
+    
+     Harga sepatu mulai dari 50 ribu sampai dengan 1 juta rupiah.
+     Sesuaikan dengan kemampuan anda.
+    2. Harga sandal
+
+     Harga sandal relatif murah jika dibandingkan dengan harga sepatu.
+     Anda dapat membelinya mulai dari 10 ribu sampai dengan 400 ribu rupiah.
+
+    Note: setiap ingin membuat paragraf di dalam list. Harus membuat baris kosong 1 dan spasi sekali diawal paragraf.
+    
+14. 
