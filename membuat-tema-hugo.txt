@@ -172,7 +172,11 @@ sumber: https://gohugo.io/functions/lang
 {{ strings.Repeat 3 "yo"}} -> "yoyoyo"
 
 
-3.0 
+3.0 Function untuk folder partials
+{{ partial "header.html" }} -> "layouts/partials/header.html"
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
