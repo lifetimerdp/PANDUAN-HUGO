@@ -128,4 +128,29 @@ format file markdown:   nama-file.md
     |           |             |            |
 
 
-18. 
+18. Penanda untuk kata atau kalimat penting
+    Saat ini, kucing[^1] adalah salah satu hewan peliharaan terpopuler di dunia. Kucing yang garis keturunannya tercatat secara resmi sebagai kucing         trah atau galur murni (pure breed), seperti persia, siam, manx, dan sphinx. Kucing seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi.     Jumlah kucing ras hanyalah 1% dari seluruh kucing di dunia, sisanya adalah kucing dengan keturunan campuran[^2] seperti kucing liar atau kucing           kampung.
+
+    [^1]: teks catatan pertama
+    [^2]: teks catatan kedua
+    
+    Ket: antara [^1] dan [^1]: akan saling terhubung dan dapat diklik
+
+
+19. Cara lain membuat penanda
+    [catatan 1](#note1)
+    
+    Nantinya kalian dapat mengeklik link ini dan akan langsung menuju yang link yang ditandai (ini seperti internal link pada halaman).
+
+
+20. Mencoret kata / kalimat
+    ~~kata yang mau dicoret~~
+    
+    
+21. Daftar Tugas (Keren)
+    1. [x] Write the press release
+    2. [ ] Update the website
+    3. [ ] Contact the media
+    
+    
+22. 
