@@ -32,6 +32,7 @@ sumber: https://gohugo.io/variables
 sumber: https://gohugo.io/functions
 
 
+
 2.2 Function untuk operator matematika
 | Fungsi | Keterangan                   |  Contoh                  |
 |  add   | Menambahkan dua angka.       | {{add 1 2}} -> 3         |
@@ -85,11 +86,45 @@ sumber: https://gohugo.io/functions
 
 - math.Sqrt (mengembalikan hasil dari akar kuadrat angka)
 {{ math.Sqrt 81 }} -> 9
+
+
+
+2.3 Function untuk operator perbandingan
+- lt (kurang dari < )
+{{ if lt 5 10 }}
+  kondisi true
+{{ else }}
+  kondisi false
+{{ end }}
+
+- ge (lebih besar atau sama dengan >= )
+{{ if ge 10 5 }}
+  kondisi true
+{{ else }}
+  kondisi false
+{{ end }}
+
+- le (lebih kecil atau sama dengan <= )
+{{ if le 10 5 }}
+  kondisi true
+{{ else }}
+  kondisi false
+{{ end }}
+
+- ne (tidak sama dengan != )
+{{ if ne .Section "blog" }}
+  kondisi jika .Section bukan "blog"
+{{ end }}
+
+- eq (sama dengan sama dengan == )
+{{ if eq .Section "blog" }}
+  kondisi jika .Section adalah "blog"
+{{ end }}
+
+
+
+2.4 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 
 # membuat folder web hugo
 - hugo new site namaweb
