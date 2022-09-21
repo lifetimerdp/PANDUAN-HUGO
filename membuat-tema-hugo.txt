@@ -145,7 +145,11 @@ sumber: https://gohugo.io/functions
 
 
 
-2.5 
+2.5 Function untuk memformat dan mengkonversi (misalnya angka ke mata uang 100 jadi 100$, 80 jadi 80% dll)
+sumber: https://gohugo.io/functions/lang
+
+
+2.6 Function 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
