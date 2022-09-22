@@ -39,7 +39,7 @@ Variabel bawaan itu contohnya seperti baseurl, title, languagecode yang terdapat
 
 ### Variabel bawaan HUGO untuk file konfigurasi seperti config.toml  
 
-#### archetypeDir
+1. **archetypeDir**
 
 Default value: "archetypes"
 
@@ -76,6 +76,29 @@ Akan terlihat seperti ini:
 **Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-build**
 
 Lihat semua variabel bawaan HUGO di dokumentasi web hugo atau dengan mengeklik link ini https://gohugo.io/getting-started/configuration/#all-configuration-settings  
+
+#### buildDrafts
+
+Default value: false
+
+Sertakan draf saat build
+
+#### buildExpired
+
+Sertakan konten yang sudah kadaluarsa. konten kadaluarsa adalah konten yang memiliki waktu kadaluarsa.  
+Kalian bisa mengatur waktu kadaluarsa konten menggunakan variabel expirydate: waktu-kadaluarsanya.  
+
+**contoh postingan5.md:**  
+
+```
+title: "judul artikel"
+languagecode: "en-us"
+expirydate: 2023-09-19T15:25:14+07:00
+```
+
+#### buildFuture
+
+#### caches
 
 ### Site Variabel 
 
