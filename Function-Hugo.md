@@ -12,7 +12,7 @@ baseurl= "example.com"
 title= "Doni Setiawan Website"
 languagecode = "en-us"
 
-[params]
+[Params]
     author: "Doni"
     description: "Website ini dibuat oleh Doni Setiawan sebagai dokumentasi hasil belajar pribadi dan juga berisi artikel yang saya tulis"
 ```
@@ -33,6 +33,33 @@ Maka saya akan menuliskan ini:
 ```
 {{ .Site.Params.description }}
 ```
+
+Selain membuat variabel sendiri seperti sebelumnya. Kita juga dapat menggunakan **variabel bawaan HUGO**.  
+Variabel bawaan itu contohnya seperti baseurl, title, languagecode yang terdapat di File **config.toml**.
+
+### Variabel bawaan HUGO untuk file konfigurasi seperti config.toml  
+
+#### archetypeDir
+
+Default value: "archetypes"
+
+Ini digunakan untuk menentukan folder archetypes kustom (folder archetypes versi kita sendiri).
+
+#### assetDir
+
+Default value: "assets"
+
+Ini digunakan untuk menentukan folder assets kustom (folder assets tidak dibuat secara otomatis. Jadi kita perlu membuatnya terlebih dahulu jika memang membutuhkannya).  
+
+> Folder assets digunakan untuk menyimpan file-file yang belum di kompilasi atau belum dikompres. Misalnya foto beresolusi tinggi dengan ukuran yang besar.  
+> Hugo akan mengkompres file di folder assets dan mengirimkannya ke folder bernama **resources** untuk dikonsumsi publik atau pengunjung.
+> Biasanya kita perlu mengatur variabel tertentu di File **config.toml**
+
+#### baseURL  
+
+baseURL atau juga bisa ditulis baseurl adalah variabel untuk menentukan hostname atau url situs
+
+#### 
 
 # Function
 
