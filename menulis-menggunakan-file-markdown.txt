@@ -153,4 +153,7 @@ format file markdown:   nama-file.md
     3. [ ] Contact the media
     
     
-
+22. Video Youtube
+    {{< youtube kode_videonya >}}
+    
+    {{< youtube 2xkNJL4gJ9E&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=9 >}}
