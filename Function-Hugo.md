@@ -1,21 +1,38 @@
 > "Halaman ini berisi beberapa Variabel dan Function bawaan dari HUGO. Ditulis dan dijelaskan sesuai pemahaman saya sendiri"
 
-## Variabel
+# Variabel
 
-### Site.Params.<nama variabel>  
+### Site.Params.nama-variabel  
 
-nama variabel berasal dari config.toml di folder root Proyek Hugo kalian.  
-config.toml
+**_nama variabel_** diambil dari file config.toml di Proyek HUGO kalian.  
+
+File **config.toml**  
 ```
----
-title: ""
-description: ""
----
+baseurl= "example.com"
+title= "Doni Setiawan Website"
+languagecode = "en-us"
+
 [params]
-  description: "Website ini dibuat oleh Doni Setiawan sebagai dokumentasi hasil belajar pribadi dan juga berisi artikel yang saya tulis"
+    author: "Doni"
+    description: "Website ini dibuat oleh Doni Setiawan sebagai dokumentasi hasil belajar pribadi dan juga berisi artikel yang saya tulis"
 ```
 
-Cara memanggil des
+#### Cara menggunakannya:
 
-## Function
+Misalnya saya mau menggunakannya di File **index.html**.  
+Maka saya akan menuliskan ini:
+
+**Akses variabel author**
+
+```
+{{ .Site.Params.author }}
+```
+
+**Akses variabel description**
+
+```
+{{ .Site.Params.description }}
+```
+
+# Function
 
