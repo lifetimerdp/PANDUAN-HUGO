@@ -229,8 +229,13 @@ Tambahan:
    - header.html (untuk mengatur header semua halaman situs)
    - footer.html (untuk mengatur footer semua halaman situs)
 
-4. 
-
+4. index.html, 404.html, dan lainnya adalah bagian content dari baseof.html. Karena ini berubah untuk halaman yang berbeda. Kita dapat
+   mengaturnya menggunakan {{ block "main" . }}{{ end }} di baseof.html
+   
+   Setalah itu, kita hanya perlu mengaturnya di file.html yang kita mau gunakan sebagai konten halaman misalnya index.html, 404.html, dll
+   {{ define "main" }}
+      Kontennya disini
+   {{ end }}
 
 
 
