@@ -256,6 +256,9 @@ Tambahan:
    date: {{ .Date }}
    draft: false
    ---
+   
+   Selain default.md, kalian juga dapat membuat file untuk mengatur file yang berbeda, misalnya penulisnya beda.
+   Buat file dengan nama yang sama dengan folder yang ditargetkan. Misalnya blog.md akan merujuk ke content/blog/
 
 7. front matter adalah cara untuk mengatur isi dari file markdown
    ---
@@ -276,6 +279,7 @@ Tambahan:
 9. mengatur taxonomy atau halaman tags. Taxonomy otomatis dibuatkan halaman jika front matter menggunakan sebuah tags:
    akses di https://url.com/tags. Kalian dapat menampilkan list dari tags yang sudah dibuat di home page, atau halaman lainnya
    menggunakan function di hugo
+   
    
 10. 
 
@@ -399,5 +403,20 @@ sumber: https://gohugo.io/variables/taxonomy
 - etc
 
 
-# 
+# Membuat taxonomy atau tag kustom sendiri
+di post misalnya post1.md
+---
+title: ""
+description: ""
+custom_tags: [mencoba]
+---
 
+di config.toml
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  custom_tag = "custom_tags"
+
+
+
+# Template hugo
