@@ -51,15 +51,39 @@ Default value: "assets"
 
 Ini digunakan untuk menentukan folder assets kustom (folder assets tidak dibuat secara otomatis. Jadi kita perlu membuatnya terlebih dahulu jika memang membutuhkannya).  
 
-> Folder assets digunakan untuk menyimpan file-file yang belum di kompilasi atau belum dikompres. Misalnya foto beresolusi tinggi dengan ukuran yang besar.  
-> Hugo akan mengkompres file di folder assets dan mengirimkannya ke folder bernama **resources** untuk dikonsumsi publik atau pengunjung.
-> Biasanya kita perlu mengatur variabel tertentu di File **config.toml**
+> **Folder assets** digunakan untuk menyimpan file-file yang **_belum di kompilasi atau belum dikompres_**. Misalnya foto beresolusi tinggi dengan ukuran yang besar.  
+
+> Hugo akan mengkompres file di folder assets dan mengirimkannya ke folder bernama **resources** untuk dikonsumsi publik atau pengunjung.  
+
+> Biasanya kita perlu mengatur variabel tertentu di File **config.toml** agar file hasil kompres dapat kita gunakan.  
 
 #### baseURL  
 
 baseURL atau juga bisa ditulis baseurl adalah variabel untuk menentukan hostname atau url situs
 
-#### 
+#### build
+
+Ini digunakan untuk mengkonfigurasi build global. Misalnya mengkompres gambar
+
+Akan terlihat seperti ini:  
+
+```
+[build]
+    useResourceCacheWhen = 'fallback'
+    noJSConfigInAssets = false
+```
+
+**Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-build**
+
+Lihat semua variabel bawaan HUGO di dokumentasi web hugo atau dengan mengeklik link ini https://gohugo.io/getting-started/configuration/#all-configuration-settings  
+
+### Site Variabel 
+
+> Site variabel adalah cara untuk mengakses variabel bawaan HUGO dari file.html (misalnya, index.html, single.html, dll).  
+
+> Variabel bawaan hugo seperti baseURL, title, copyright, googleAnalytics, dan masih banyak lagi. Dokumentasi lengkapnya https://gohugo.io/getting-started/configuration/#all-configuration-settings
+
+
 
 # Function
 
