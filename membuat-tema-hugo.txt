@@ -209,7 +209,8 @@ sumber: https://gohugo.io/functions/lang
 {{ end }}
 
 
-4.3 
+4.3 With untuk pengulangan function default
+{{ with .Param "description" }}
 
 
 
@@ -218,6 +219,17 @@ sumber: https://gohugo.io/functions/lang
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+Tambahan:
+1. list.html untuk mengatur home page (umumnya disebut halaman list karena menampilkan list dari konten)
+2. single.html untuk mengatur halaman tunggal. Ini adalah halaman yang kita buat di folder content (file yang berekstensi .md)
+3. baseof.html mengatur semua bagian dasar dari situs. Misalnya struktur dasar html seperti <html>, <head>, <body>.
+   Umumnya <head>, <body> akan ditulis di file:
+   - head.html (untuk mengatur file tersembunyi seperti tag meta)
+   - header.html (untuk mengatur header semua halaman situs)
+   - footer.html (untuk mengatur footer semua halaman situs)
+
+4. 
 
 
 
