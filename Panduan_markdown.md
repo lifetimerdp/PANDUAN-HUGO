@@ -1,4 +1,4 @@
-format file markdown:   nama-file.md
+**format file markdown:   nama-file.md**
 
 1.  Garis Miring 
     _Kucing adalah hewan yang paling banyak di pelihara_
