@@ -237,6 +237,37 @@ Tambahan:
       Kontennya disini
    {{ end }}
 
+5. _index.md adalah file untuk mengatur halaman yang terdapat di folder content. Ini seperti file konfigurasi khusus untuk halaman tersebut.
+   Kita juga dapat membuat halaman untuk sub-folder (content/folder/sub-folder) karena biasanya hugo hanya membuat halaman pada tingkat folder.
+   ---
+   title: "halaman blog"
+   summary: "ini adalah halaman blog"
+   ---
+  
+   Ini adalah halaman blog dan kita dapat mengatur halaman di file ini _index.md
+
+
+6. archetypes/default.md adalah file untuk mengatur front matter apa yang ingin ditampilkan di file.md
+   ---
+   title: "{{ replace .Name "-" " " | title }}"
+   date: {{ .Date }}
+   draft: false
+   ---
+
+7. front matter adalah cara untuk mengatur isi dari file markdown
+   ---
+   title: "kucing beranak"
+   description: "kucing beranak adalah istilah untuk kucing yang mempunyai anak"
+   ---
+   
+   daftar front matter default dari hugo => https://gohugo.io/content-management/front-matter
+   
+   Note: Isi dari front matter dapat kita gunakan di file.html dengan function yang sudah disediakan hugo.
+         Biasanya file tertentu memiliki cara yang berbeda untuk menampilkan isi dari front matter ini.
+         Silahkan baca dokumentasinya 
+   
+8. 
+
 
 
 
