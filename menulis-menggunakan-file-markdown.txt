@@ -154,6 +154,6 @@ format file markdown:   nama-file.md
     
     
 22. Video Youtube
-    {{< youtube kode_videonya >}}
+    {{< youtube 11_kode_videonya >}}
     
-    {{< youtube 2xkNJL4gJ9E&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=9 >}}
+    {{< youtube 2xkNJL4gJ9E >}}
