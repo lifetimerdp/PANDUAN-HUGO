@@ -1,55 +1,78 @@
 **format file markdown:   nama-file.md**
 
-1.  Garis Miring  
-    ‘‘‘_Kucing adalah hewan yang paling banyak di pelihara_‘‘‘
+1.  _Garis Miring_  
+    ```
+    _Kucing adalah hewan yang paling banyak di pelihara_
+    ```
     
 2.  Huruf tebal atau Bold  
+    ```
     **Anjing adalah hewan yang setia**
+    ```
     
-3.  Tebal dan miring
+3.  **_Tebal dan miring_**  
+    ```
     **_Saya tidak percaya ini!_**
+    ```
     
-4.  Heading
+4.  Heading  
+    ```
     # Header one        => h1
     ## Header two       => h2
     ### Header three    => h3
     #### Header four    => h4
     ##### Header five   => h5
     ###### Header six   => h6
-    
-5.  Membuat link
+    ```
+
+5.  Membuat link  
+    ```
     [text](https://url.com)
+    ```
     
-6.  Menyiapkan link agar dapat digunakan berkali-kali
+6.  Menyiapkan link agar dapat digunakan berkali-kali  
+    ```
     Kucing adalah [hewan][refHewan] kategori mamalia. [Hewan][refHewan] mamalia adalah [hewan][refHewan] yang menyusui dan melahirkan.
     [refHewan]: https://id.wikipedia.org/wiki/Hewan
+    ```
     
-7.  Membuat Gambar
+7.  Membuat Gambar  
+    ```
     ![Text alt](https://www.url.com/gambar1.png)
+    ```
     
-8.  Gambar yang dapat digunakan berkali-kali
+8.  Gambar yang dapat digunakan berkali-kali  
+    ```
     ![Kucing][cat] adalah hewan kategori mamalia. ![Kucing][cat] banyak dipelihara manusia karena tidak berbahaya.
-    [cat]: https://id.wikipedia.org/wiki/Kucing
     
-9.  Kutipan atau Blockquote ( Gunakan tanda > di paling awal kata )
+    [cat]: https://id.wikipedia.org/wiki/Kucing
+    ```
+    
+9.  Kutipan atau Blockquote ( Gunakan tanda > di paling awal kata )  
+    ```
     > "Kucingku bernama hebe.
        Dia sangat lucu :)"
-       
-    Note: Jika terdapat baris kosong, gunakan > lagi (baris kosong dan paragraf selanjutnya) maka blockquote akan menjadi 1
+    ```  
+    > "Jika terdapat baris kosong atau baris baru, gunakan > lagi (di baris kosong dan di paragraf selanjutnya) maka blockquote akan menjadi satu kesatuan".
     
     
-10. List tak-terurut
+10. List tak-terurut  
+    ```
     * list1
     * list2
     * dst
-    
-11. List angka
+    ```
+
+11. List angka  
+    ```
     1. Daftar pertama
     2. Kedua
     3. Ketiga
     4. Dst
-    
-12. Sub daftar tak-terurut
+    ```
+
+12. Sub daftar tak-terurut  
+    ```
     * Resep ikan bakar
         * kunyit
         * bawang
@@ -59,9 +82,10 @@
         * Kecap bangau
         * Garam
         * Micin
+        ```
     
-13. Paragraf di antara list
-
+13. Paragraf di antara list  
+    ```
     1. Harga sepatu
     
      Harga sepatu mulai dari 50 ribu sampai dengan 1 juta rupiah.
@@ -71,23 +95,26 @@
 
      Harga sandal relatif murah jika dibandingkan dengan harga sepatu.
      Anda dapat membelinya mulai dari 10 ribu sampai dengan 400 ribu rupiah.
+    ```
 
-    Note: setiap ingin membuat paragraf di dalam list. Harus membuat baris kosong 1 dan spasi sekali diawal paragraf.
+    > "Setiap ingin membuat paragraf di dalam list. Harus membuat baris kosong 1 dan spasi sekali diawal paragraf".
     
-14. Jarak lembut atau soft breaks (Gunakan spasi 2 kali di akhir paragraf)
-    
+14. Jarak lembut atau soft breaks (Gunakan spasi 2 kali di akhir paragraf)  
+    ```
     Paragraf pertama lorem ipsum sume te gake youon.  
-    Paragraf kedua 
+    Paragraf kedua ini berisi kalimat contoh, ini hanya contoh.
+    ```
+
+15. Membuat block kode  
     
-15. Membuat block kode
-    
-    contoh:
+    ```
     ```
     <DOCTYPE html>
     <html>
         <head></head>
         <body></body>
     </html>
+    ```
     ```
     
     Kode block dengan highlight. Tambahkan nama bahasanya atau ekstensi dibelakang backtick awal (mendukung bahasa apapun)
