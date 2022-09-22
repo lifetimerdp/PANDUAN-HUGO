@@ -273,7 +273,11 @@ Tambahan:
    https://gohugo.io/templates/section-templates/#example-creating-a-default-section-template
 
 
-9. 
+9. mengatur taxonomy atau halaman tags. Taxonomy otomatis dibuatkan halaman jika front matter menggunakan sebuah tags:
+   akses di https://url.com/tags. Kalian dapat menampilkan list dari tags yang sudah dibuat di home page, atau halaman lainnya
+   menggunakan function di hugo
+   
+10. 
 
 
 
