@@ -85,6 +85,13 @@ sumber: https://gohugo.io/functions
 
 
 2.3 Function untuk operator perbandingan
+- gt (lebih dari > )
+{{ if gt 10 5 }}
+  kondisi true
+{{ else }}
+  kondisi false
+{{ end }}
+
 - lt (kurang dari < )
 {{ if lt 5 10 }}
   kondisi true
@@ -209,11 +216,42 @@ sumber: https://gohugo.io/functions/lang
 {{ end }}
 
 
-4.3 With untuk pengulangan function default
+4.3 With untuk pengulangan function (Banyak digunakan untuk mengambil data di front matter, misalnya tags, title dll)
 {{ with .Param "description" }}
+  {{ . }}
+{{ else }}
+  {{ .Summary }}
+{{ end }}
 
 
+4.4 and
+{{ if and (isset .Params "title") (isset .Params "description") }}
+  kondisi true
+{{ end }}
 
+
+4.5 or
+{{ if or (isset .Params "title") (isset .Params "description") }}
+  kondisi true
+{{ end }}
+
+cara mudah:
+{{ if isset .Params "title" | or isset .Params "description" }}
+  kondisi true
+{{ end }}
+
+
+4.6 where function (digunakan untuk menyelam atau mencari lebih dalam dari data array)
+{{ if where .Pages "Section" "blog" }}    => jika halaman adalah halaman blog, maka
+  {{ .Content }}                          => tampilkan konten
+{{ end }}
+
+4.7 where dengan operator perbandingan        => bisa menggunakan semua operator perbandingan, dan in, atau not in, sama intersect
+{{ if where .Pages "Section" "!=" "blog" }}   => dokumentasi https://gohugo.io/functions/where
+  Ini bukan halaman blog
+{{ end }}
+
+4.8 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -221,7 +259,9 @@ sumber: https://gohugo.io/functions/lang
 
 
 Tambahan:
-1. list.html untuk mengatur home page (umumnya disebut halaman list karena menampilkan list dari konten)
+1. list.html untuk mengatur halaman yang menampilkan list postingan seperti halaman blog (umumnya disebut halaman list karena menampilkan list dari konten)
+
+1.1 index.html untuk mengatur apa yang mau ditampilkan di home page
 
 2. single.html untuk mengatur halaman tunggal. Ini adalah halaman yang kita buat di folder content (file yang berekstensi .md)
    Langsung jadi tanpa perlu mengatur -> https://gohugo.io/templates/single-page-templates
