@@ -165,38 +165,59 @@
     |isi 1.1|isi 2.1|isi 3.1|  
     
 17. Membuat tabel rata kanan, tengah, atau kiri  
+    ```
     |  judul 1  |   judul 2   |   judul 3  |
     |   :---    |    :---:    |    ---:    |
     | rata kiri | rata tengah | rata kanan |
     |           |             |            |
+    ```
 
+    **HASIL:**
+    |  judul 1  |   judul 2   |   judul 3  |
+    |   :---    |    :---:    |    ---:    |
+    | rata kiri | rata tengah | rata kanan |
+    |           |             |            |  
 
-18. Penanda untuk kata atau kalimat penting
+18. Penanda untuk kata atau kalimat yang penting  
+    ```
     Saat ini, kucing[^1] adalah salah satu hewan peliharaan terpopuler di dunia. Kucing yang garis keturunannya tercatat secara resmi sebagai kucing         trah atau galur murni (pure breed), seperti persia, siam, manx, dan sphinx. Kucing seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi.     Jumlah kucing ras hanyalah 1% dari seluruh kucing di dunia, sisanya adalah kucing dengan keturunan campuran[^2] seperti kucing liar atau kucing           kampung.
 
     [^1]: teks catatan pertama
     [^2]: teks catatan kedua
+    ```
     
-    Ket: antara [^1] dan [^1]: akan saling terhubung dan dapat diklik
+    > Antara [^1] diparagraf dan [^1]: dibawah, saling terhubung satu sama lain dan dapat diklik
 
-
-19. Cara lain membuat penanda
+19. Cara lain membuat penanda  
+    ```
     [catatan 1](#note1)
+    ```
     
-    Nantinya kalian dapat mengeklik link ini dan akan langsung menuju yang link yang ditandai (ini seperti internal link pada halaman).
+    > Kalian dapat mengeklik link ini dan langsung menuju link yang ditandai. Biasanya cara ini digunakan untuk membuat penanda di judul artikel.
 
-
-20. Mencoret kata / kalimat
-    ~~kata yang mau dicoret~~
+20. Mencoret kata / kalimat  
+    ```
+    ~~kata yang dicoret~~
+    ```
     
-    
-21. Daftar Tugas (Keren)
+21. Daftar Tugas (Keren sih ini fiturnya)  
+    ```  
     1. [x] Write the press release
     2. [ ] Update the website
     3. [ ] Contact the media
+    ```
+
+    **HASIL:**
+    1. [x] Write the press release
+    2. [ ] Update the website
+    3. [ ] Contact the media
+
+22. Video Youtube  
+    ```
+    {{< youtube 11_kode_video_youtube >}}
     
+    {{< youtube 2xkNJL4gJ9E >}}
+    ```
     
-22. Video Youtube
-    {{< youtube 11_kode_videonya >}}
-    
+    **HASIL:**
     {{< youtube 2xkNJL4gJ9E >}}
