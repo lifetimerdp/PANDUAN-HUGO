@@ -1,7 +1,7 @@
 **format file markdown:   nama-file.md**
 
 1.  Garis Miring  
-    ’_Kucing adalah hewan yang paling banyak di pelihara_’
+    ‘‘‘_Kucing adalah hewan yang paling banyak di pelihara_‘‘‘
     
 2.  Huruf tebal atau Bold  
     **Anjing adalah hewan yang setia**
