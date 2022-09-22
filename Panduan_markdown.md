@@ -82,7 +82,7 @@
         * Kecap bangau
         * Garam
         * Micin
-        ```
+    ```
     
 13. Paragraf di antara list  
     ```
@@ -208,9 +208,9 @@
     ```
 
     **HASIL:**
-    1. [x] Write the press release
-    2. [ ] Update the website
-    3. [ ] Contact the media
+    - [x] Write the press release
+    - [ ] Update the website
+    - [ ] Contact the media
 
 22. Video Youtube (Cuma untuk beberapa file markdown. Misalnya file markdown di framework Hugo)  
     ```
