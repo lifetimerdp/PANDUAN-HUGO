@@ -105,9 +105,8 @@
     Paragraf kedua ini berisi kalimat contoh, ini hanya contoh.
     ```
 
-15. Membuat block kode  
+15. Membuat block kode (Gunakan ``` diawal dan diakhir kode)  
     
-    ```
     ```
     <DOCTYPE html>
     <html>
@@ -115,9 +114,9 @@
         <body></body>
     </html>
     ```
-    ```
     
-    Kode block dengan highlight. Tambahkan nama bahasanya atau ekstensi dibelakang backtick awal (mendukung bahasa apapun)
+    Kode block dengan Highlight. Tambahkan nama ekstensinya (tanpa titik) dibelakang 3 backtick awal (mendukung bahasa apapun)
+    - HTML 
     ```html
     <DOCTYPE html>
     <html>
@@ -125,7 +124,7 @@
         <body></body>
     </html>
     ```
-    
+    - JSON  
     ```json
     {
       "firstName": "John",
@@ -134,21 +133,38 @@
     }
     ```
 
-16. Tabel
+16. Tabel  
+    ```
     | judul 1 | judul 2 | judul 3 |
     |---------|---------|---------|
     | isi 1   | isi 2   | isi 3   |
     | isi 1.1 | isi 2.1 | isi 3.1 |
+    ```
+
+    **HASIL:**  
+
+    | judul 1 | judul 2 | judul 3 |
+    |---------|---------|---------|
+    | isi 1   | isi 2   | isi 3   |
+    | isi 1.1 | isi 2.1 | isi 3.1 |  
     
-    saran: tidak perlu rapi seperti diatas, seperti dibawah ini juga bisa
+    > "Tidak perlu rapi seperti diatas, seperti dibawah ini juga bisa".  
     
+    ```
     |judul 1|judul 2|judul 3|
+    |---|---|---|
     |isi 1|isi 2|isi 3|
     |isi 1.1|isi 2.1|isi 3.1|
+    ```
     
     Hasil akhirnya sama saja.
+
+    |judul 1|judul 2|judul 3|
+    |---|---|---|
+    |isi 1|isi 2|isi 3|  
+    |isi 1.1|isi 2.1|isi 3.1|  
     
-17. Membuat tabel rata kanan, tengah, atau kiri
+17. Membuat tabel rata kanan, tengah, atau kiri  
     |  judul 1  |   judul 2   |   judul 3  |
     |   :---    |    :---:    |    ---:    |
     | rata kiri | rata tengah | rata kanan |
