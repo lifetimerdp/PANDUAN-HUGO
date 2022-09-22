@@ -222,7 +222,10 @@ sumber: https://gohugo.io/functions/lang
 
 Tambahan:
 1. list.html untuk mengatur home page (umumnya disebut halaman list karena menampilkan list dari konten)
+
 2. single.html untuk mengatur halaman tunggal. Ini adalah halaman yang kita buat di folder content (file yang berekstensi .md)
+   Langsung jadi tanpa perlu mengatur -> https://gohugo.io/templates/single-page-templates
+
 3. baseof.html mengatur semua bagian dasar dari situs. Misalnya struktur dasar html seperti <html>, <head>, <body>.
    Umumnya <head>, <body> akan ditulis di file:
    - head.html (untuk mengatur file tersembunyi seperti tag meta)
@@ -266,8 +269,11 @@ Tambahan:
          Biasanya file tertentu memiliki cara yang berbeda untuk menampilkan isi dari front matter ini.
          Silahkan baca dokumentasinya 
    
-8. 
+8. layouts/_default/section.html untuk mengatur setiap page seperti blog page, atau custom page lainnya.
+   https://gohugo.io/templates/section-templates/#example-creating-a-default-section-template
 
+
+9. 
 
 
 
