@@ -212,12 +212,12 @@
     2. [ ] Update the website
     3. [ ] Contact the media
 
-22. Video Youtube  
+22. Video Youtube (Cuma untuk beberapa file markdown. Misalnya file markdown di framework Hugo)  
     ```
     {{< youtube 11_kode_video_youtube >}}
     
     {{< youtube 2xkNJL4gJ9E >}}
     ```
-    
-    **HASIL:**
+
+    **HASIL:**  
     {{< youtube 2xkNJL4gJ9E >}}
