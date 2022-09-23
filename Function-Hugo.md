@@ -160,6 +160,24 @@ cascade:
 
 ### canonifyURLs
 
+Default value: false
+
+Digunakan untuk mengubah URL relatif menjadi URL absout.
+
+### contentDir
+
+Default value: "content"
+
+Ubah sumber folder content ke folder lainnya.
+
+### copyright
+
+Default value: ""
+
+Atur kata-kata untuk hak cipta. Umumnya hak cipta diletakkan di bagian footer situs.
+
+### dataDir
+
 
 
 ### Site Variabel 
