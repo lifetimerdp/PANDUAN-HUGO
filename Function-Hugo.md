@@ -198,6 +198,75 @@ Ini untuk memberikan url situs url tambahan dari bahasa saat ini. Sebagai contoh
 
 Default value: false
 
+Digunakan untuk mematikan pengalihan alias.  Meskipun disableAliases disetel ke true, alias masih ada di halaman. Misalnya redirect 301 pada halaman.
+
+### disableHugoGeneratorInject
+
+Default value: false
+
+Jika disetel ke ```true```, maka meta generator Hugo akan tidak di ikut sertakan. Saya menyarankan untuk tidak mengaktifkan ini, sebagai rasa terima kasih dan support untuk tim Hugo.
+
+meta generator Hugo kira-kira akan terlihat seperti ini:  
+```
+<meta name="generator" content="Hugo 0.93.3">
+```
+
+### disableKinds
+
+Default value: []
+
+Digunakan untuk menonaktifkan halaman yang ditentukan. Misalnya halaman "page", "home", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404".
+
+**contoh penggunaan:**
+
+```
+disableKinds: ["home"]
+```
+
+### disableLiveReload
+
+Default value: false
+
+Digunakan untuk _mematikan refresh otomastis_ di browser saat sedang melakukan perubahan di situs.
+
+### disablePathToLower
+
+Default value: false
+
+Jika disetel true, maka url dengan huruf kapital tidak akan di konversi ke huruf kecil (Biasanya url selalu dikonversi ke huruf kecil).
+
+### enableEmoji
+
+Default value: false
+
+Digunakan untuk mengaktifkan fitur emoji di situs anda (Disarankan untuk mengaktifkannya dengan cara menyetel ke ```true``` agar situs anda dapat menggunakan emoji).
+
+**List emoji: https://www.webfx.com/tools/emoji-cheat-sheet**
+
+### enableGitInfo
+
+Default value: false
+
+Set ke true, jika kalian membutuhkan git saat sedang melakukan pembangunan situs. Dengan mengaktifkan ini, kalian akan mendapatkan info commit terbaru dan kalian tidak perlu mengatur tanggal postingan (kecuali jika anda ingin menerbitkan artikel tersebut di waktu mendatang) karena .Lastmod akan otomatis disetel.
+
+**contoh penggunaan:**
+
+
+```
+<p>
+	<strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+	{{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+		Last modified {{ .Lastmod.Format "January 2, 2006" }}
+	{{- else -}}
+		&nbsp;
+	{{- end -}}
+</p>
+```
+
+### enableInlineShortcodes
+
+Default value: false
+
 
 
 ### Site Variabel 
