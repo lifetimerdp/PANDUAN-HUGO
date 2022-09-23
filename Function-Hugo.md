@@ -178,6 +178,26 @@ Atur kata-kata untuk hak cipta. Umumnya hak cipta diletakkan di bagian footer si
 
 ### dataDir
 
+Default value: "data"
+
+Digunakan untuk menentukan folder alternatif selain folder data
+
+### defaultContentLanguage
+
+Default value: “en”
+
+Digunakan untuk mengatur bahasa dari artikel yang kita buat. Jika artikel yang anda terbitkan tidak menyetel bahasa. Maka bahasa yang di setel di defaultContentLanguage akan digunakan.
+
+### defaultContentLanguageInSubdir
+
+Default value: false
+
+Ini untuk memberikan url situs url tambahan dari bahasa saat ini. Sebagai contoh ```https://url.com/en/```
+
+### disableAliases
+
+Default value: false
+
 
 
 ### Site Variabel 
