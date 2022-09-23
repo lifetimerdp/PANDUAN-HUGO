@@ -77,8 +77,8 @@
 				}
 			</style>
 			<div class="container">
-				<h1>Selamat Datang</h1>
-				<p>Belajar Hugo dan Markdown Disini</p>
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
 			</div>
 		</div>
 	</foreignObject>
