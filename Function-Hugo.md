@@ -1,7 +1,5 @@
 > "Halaman ini berisi beberapa Variabel dan Function bawaan dari HUGO. Ditulis dan dijelaskan sesuai pemahaman saya sendiri"
 
-<div color="red">test</div>
-
 # Variabel
 
 ### Site.Params.nama-variabel  
@@ -153,6 +151,16 @@ cascade:
 ```
 <meta name="keywords" content="{{range $.Params.keywords}}{{.}} {{end}}">
 ```
+
+> Selengkapnya:
+> - https://gohugo.io/content-management/front-matter#front-matter-cascade  
+> - https://gohugo.io/content-management/front-matter#target-specific-pages
+> 
+> Tidak semua variabel di front matter dapat digunakan di bawah cascade. Silahkan uji coba sendiri.
+
+### canonifyURLs
+
+
 
 ### Site Variabel 
 
