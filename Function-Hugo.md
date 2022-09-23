@@ -1,5 +1,7 @@
 > "Halaman ini berisi beberapa Variabel dan Function bawaan dari HUGO. Ditulis dan dijelaskan sesuai pemahaman saya sendiri"
 
+<div color="red">test</div>
+
 # Variabel
 
 ### Site.Params.nama-variabel  
@@ -39,7 +41,7 @@ Variabel bawaan itu contohnya seperti baseurl, title, languagecode yang terdapat
 
 ### Variabel bawaan HUGO untuk file konfigurasi seperti config.toml  
 
-1. **archetypeDir**
+archetypeDir
 
 Default value: "archetypes"
 
@@ -110,3 +112,6 @@ expirydate: 2023-09-19T15:25:14+07:00
 
 # Function
 
+### Param
+
+Digunakan
