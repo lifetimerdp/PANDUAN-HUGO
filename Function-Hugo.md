@@ -297,6 +297,11 @@ Isi dengan tracking ID dari Google Analytics.
 
 Default value: false
 
+Jika disetel true, akan mendeteksi otomatis Bahasa Cina/Jepang/Korea di konten.  
+Ini akan membuat .Summary dan .WordCount berperilaku dengan benar untuk bahasa Cina/Jepang/Korea.
+
+### imaging
+
 
 
 ### Site Variabel 
