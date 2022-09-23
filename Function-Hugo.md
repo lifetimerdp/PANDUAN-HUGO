@@ -39,15 +39,14 @@ Maka saya akan menuliskan ini:
 Selain membuat variabel sendiri seperti sebelumnya. Kita juga dapat menggunakan **variabel bawaan HUGO**.  
 Variabel bawaan itu contohnya seperti baseurl, title, languagecode yang terdapat di File **config.toml**.
 
-### Variabel bawaan HUGO untuk file konfigurasi seperti config.toml  
+### Variabel bawaan HUGO untuk file konfigurasi config.toml  
 
-archetypeDir
+### archetypeDir
 
-Default value: "archetypes"
-
+Default value: "archetypes"  
 Ini digunakan untuk menentukan folder archetypes kustom (folder archetypes versi kita sendiri).
 
-#### assetDir
+#### assetDir  
 
 Default value: "assets"
 
@@ -77,13 +76,12 @@ Akan terlihat seperti ini:
 
 **Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-build**
 
-Lihat semua variabel bawaan HUGO di dokumentasi web hugo atau dengan mengeklik link ini https://gohugo.io/getting-started/configuration/#all-configuration-settings  
-
 #### buildDrafts
 
 Default value: false
 
-Sertakan draf saat build
+Sertakan draf saat build. Semua konten dalam draf akan ikut di masukkan ke folder /public saat melakukan build.  
+Draf disini merujuk ke file didalam folder content kalian, yaitu postingankalian.md => frontmatternya ```draf: true```
 
 #### buildExpired
 
@@ -100,7 +98,61 @@ expirydate: 2023-09-19T15:25:14+07:00
 
 #### buildFuture
 
+Default value: false
+
+Sertakan konten dimasa mendatang. Yaitu konten dengan front matter ```publishDate: waktu-posting-konten```
+
 #### caches
+
+Digunakan untuk mengatur ulang pen-cache-an di situs. Secara default, anda tidak perlu menggunakan ini, kecuali jika ingin mentaur ulang cache
+(misalnya waktu kadaluarsa cache dari directory tertentu atau situs web keseluruhan)
+
+**contoh file config.toml**
+
+```
+[caches]
+    [caches.assets]
+        dir = ':resourceDir/_gen'
+        maxAge = -1
+    [caches.images]
+        dir = ':resourceDir/_gen'
+        maxAge = -1
+```
+
+**Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-file-caches**
+
+### cascade
+
+_Minimal version Hugo 0.86.0_
+
+Digunakan untuk memberikan front matter dengan nilai yang sama ke folder content, folder dibawah content, dan semua file markdown dibawahnya. Jika ingin mengubah nilai dari variabel yang diatur di cascade, Ubah nilai variabel yang sama dengan variabel di cascade sebelumnya secara manual. Misalnya saya ingin mengubah variabel keyword untuk postingan4.md
+
+**content/_index.md**
+
+```
+---
+title: "Halaman Blog"
+summary: "Anda menemukan artikel menarik disini"
+cascade:
+    keywords: "Halaman blog adalah halaman yang berisi artikel-artikel menarik yang saya tulis sendiri."
+---
+```
+
+**cara mengubah variabel terkait cascade. Misalnya mengubah variabel keywords untuk postingan4.md**
+
+```
+---
+title: "Postingan 4"
+cascade:
+    keywords: "Postingan keempat berisi artikel tentang kucing."
+---
+```
+
+**cara memanggil dan menggunakan variabel di cascade. Sebagai contoh, saya menggunakannya di file head.html**
+
+```
+<meta name="keywords" content="{{range $.Params.keywords}}{{.}} {{end}}">
+```
 
 ### Site Variabel 
 
