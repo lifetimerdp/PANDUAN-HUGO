@@ -267,6 +267,36 @@ Set ke true, jika kalian membutuhkan git saat sedang melakukan pembangunan situs
 
 Default value: false
 
+### enableMissingTranslationPlaceholders
+
+Default value: false
+
+Aktifkan jika anda membutuhkan fitur translate atau multi bahasa di situs anda. Anda perlu mengatur variabel lainnya juga seperti language.
+
+**Baca sumber lainnya: https://phrase.com/blog/posts/i18n-tutorial-how-to-go-multilingual-with-hugo/#Adding_and_Using_Translations**
+
+### enableRobotsTXT
+
+Default value: false
+
+jika disetel ke true, HUGO akan membuat file ```robots.txt``` di layouts/robots.txt
+
+### frontmatter
+
+Digunakan untuk mengatur elemen front matter. Misalnya mengatur cara front matter menampilkan waktu posting konten, dan lain-lain.
+
+**Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-front-matter**
+
+### googleAnalytics
+
+Default value: ""
+
+Isi dengan tracking ID dari Google Analytics.
+
+### hasCJKLanguage
+
+Default value: false
+
 
 
 ### Site Variabel 
