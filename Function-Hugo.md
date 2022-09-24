@@ -291,6 +291,14 @@ jika disetel ke true, HUGO akan membuat file ```robots.txt``` di layouts/robots.
 
 Digunakan untuk mengatur elemen front matter. Misalnya mengatur cara front matter menampilkan waktu posting konten, dan lain-lain.
 
+```
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
+```
+
 **Selengkapnya: https://gohugo.io/getting-started/configuration/#configure-front-matter**
 
 ### googleAnalytics
@@ -364,13 +372,41 @@ defaultContentLanguage = 'en'
 
 Ini digunakan untuk mematikan bahasa di situs anda. Ini biasanya digunakan untuk situs multibahasa yang perlu pengaturan tertentu.
 
-```
+**contoh:**
 
+```
+disableLanguages = ['fr', 'ja']
 ```
 
 **Selengkapnya: https://gohugo.io/content-management/multilingual/#disable-a-language**
 
-### 
+### markup
+
+Digunakan untuk mengatur markup untuk pengaturan file markdown (Disarankan untuk mengaturnya, karena ini dapat membuat menulis lebih enak, lancar dan juga kita bisa mengatur fitur html tertentu untuk file markdown).
+
+**contoh penggunaan:**
+
+```
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+
+```
+
+**Selengkapnya: https://gohugo.io/getting-started/configuration-markup**
+
+### mediaTypes
 
 
 
