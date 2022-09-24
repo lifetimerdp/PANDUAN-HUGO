@@ -148,7 +148,7 @@ cascade:
 
 **cara memanggil dan menggunakan variabel di cascade. Sebagai contoh, saya menggunakannya di file head.html**
 
-```
+```html
 <meta name="keywords" content="{{range $.Params.keywords}}{{.}} {{end}}">
 ```
 
@@ -207,7 +207,7 @@ Default value: false
 Jika disetel ke ```true```, maka meta generator Hugo akan tidak di ikut sertakan. Saya menyarankan untuk tidak mengaktifkan ini, sebagai rasa terima kasih dan support untuk tim Hugo.
 
 meta generator Hugo kira-kira akan terlihat seperti ini:  
-```
+```html
 <meta name="generator" content="Hugo 0.93.3">
 ```
 
@@ -252,7 +252,7 @@ Set ke true, jika kalian membutuhkan git saat sedang melakukan pembangunan situs
 **contoh penggunaan:**
 
 
-```
+```html
 <p>
 	<strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
 	{{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
@@ -266,6 +266,12 @@ Set ke true, jika kalian membutuhkan git saat sedang melakukan pembangunan situs
 ### enableInlineShortcodes
 
 Default value: false
+
+Digunakan untuk mengaktifkan **ShortCode** Hugo.
+
+> **Selengkapnya:**  
+> - https://gohugo.io/variables/shortcodes/#readout  
+> - https://gohugo.io/content-management/shortcodes/#readout
 
 ### enableMissingTranslationPlaceholders
 
@@ -301,6 +307,70 @@ Jika disetel true, akan mendeteksi otomatis Bahasa Cina/Jepang/Korea di konten.
 Ini akan membuat .Summary dan .WordCount berperilaku dengan benar untuk bahasa Cina/Jepang/Korea.
 
 ### imaging
+
+Digunakan untuk mengatur cara gambar ditampilkan di situs, kompress gambar, dimensi, format gambar, dan lain-lain yang terkait dengan gambar.
+
+**contoh:**
+
+```
+[imaging]
+    anchor = 'Smart'
+```
+
+> **Selengkapnya:**  
+> - https://gohugo.io/content-management/image-processing/
+> - https://gohugo.io/content-management/image-processing/#imaging-configuration
+
+### languageCode
+
+Default value: ""
+
+Untuk mengatur bahasa di situs anda. Sebagai contoh, ini akan digunakan di [RSS template](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml) dan [alias template](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/alias.html).
+
+### language
+
+Ini digunakan untuk mengatur bahasa, lebih tepatnya adalah untuk menerapkan multi bahasa di situs anda.
+
+**contoh:**
+
+```
+copyright = 'Everything is mine'
+defaultContentLanguage = 'en'
+[languages]
+  [languages.ar]
+    languagedirection = 'rtl'
+    title = 'مدونتي'
+    weight = 2
+  [languages.en]
+    title = 'My blog'
+    weight = 1
+    [languages.en.params]
+      linkedin = 'https://linkedin.com/whoever'
+  [languages.fr]
+    title = 'Mon blogue'
+    weight = 2
+    [languages.fr.params]
+      linkedin = 'https://linkedin.com/fr/whoever'
+      [languages.fr.params.navigation]
+        help = 'Aide'
+  [languages.pt-pt]
+    title = 'O meu blog'
+    weight = 3
+```
+
+**Selengkapnya: https://gohugo.io/content-management/multilingual/#configure-languages**
+
+### disableLanguages  
+
+Ini digunakan untuk mematikan bahasa di situs anda. Ini biasanya digunakan untuk situs multibahasa yang perlu pengaturan tertentu.
+
+```
+
+```
+
+**Selengkapnya: https://gohugo.io/content-management/multilingual/#disable-a-language**
+
+### 
 
 
 
