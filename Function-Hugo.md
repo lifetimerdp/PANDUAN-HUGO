@@ -408,7 +408,45 @@ Digunakan untuk mengatur markup untuk pengaturan file markdown (Disarankan untuk
 
 ### mediaTypes
 
+Digunakan untuk mengubah jenis media dari file. Misalnya file .html diubah ke xhtml atau untuk membuat halaman alternatif, sebagai contoh, halaman amp juga dapat kita atur menggunakan mediaTypes.
 
+**contoh penggunaan:**
+```
+[mediaTypes]
+[mediaTypes."text/html"]
+suffixes = ["htm"]
+
+# Redefine HTML to update its media type.
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "text/html"
+```
+
+**Selengkapnya: https://gohugo.io/templates/output-formats/#media-types**
+
+### menu
+
+menu digunakan untuk mengatur menu situs. Kita bisa membuat menu bercabang, menu sederhana, menu yang rumit, dan lain-lain. Di contoh lain, kita juga dapat menggunakan menu untuk membuat menu mengganti bahasa situs, dan masih banyak lagi yang dapat kita lakukan dengan menu.
+
+```
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'about hugo'
+  pre = "<i class='fa fa-heart'></i>"
+  url = '/about/'
+  weight = -110
+[[menu.main]]
+  name = 'getting started'
+  post = "<span class='alert'>New!</span>"
+  pre = "<i class='fa fa-road'></i>"
+  url = '/getting-started/'
+  weight = -100
+```
+
+**Selengkapnya: https://gohugo.io/content-management/menus/#add-non-content-entries-to-a-menu**
+
+### 
 
 ### Site Variabel 
 
