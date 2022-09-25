@@ -326,7 +326,15 @@ Tambahan:
 
 11. Shortcode adalah implementasi kode html khusus untuk folder content. Jadi, kita dapat menggunakan kode html yang telah diatur dengan 
     memanggil shortcode tertentu. Cara memanggil shortcode di file markdown adalah dengan memanggil nama filenya {{< myshortcodesfile >}}
-
+    
+    Shortcode sangat fleksibel, kita bisa mengatur kode shortcoode di file markdown mau ditampilkan seperti apa. Misalnya saya mengatur warna pada
+    teks didalam file shortcodes saya, seperti ini:
+    
+    postingan4.md
+    {{< myshortcodes color="red" >}}
+    
+    myshortcodefile.html
+    <p style="color:{{.Get `color`}}">shortcode adalah pintasan</p>
 
 # membuat folder web hugo
 - hugo new site namaweb
