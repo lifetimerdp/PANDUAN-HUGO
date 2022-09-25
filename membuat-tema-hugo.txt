@@ -335,6 +335,11 @@ Tambahan:
     
     myshortcodefile.html
     <p style="color:{{.Get `color`}}">shortcode adalah pintasan</p>
+    
+    Selain melakukan hal seperti yang saya contohkan diatas, kalian dapat melakukan hal lain yang lebih keren. Cek di dokumentasinya disini
+    https://gohugo.io/content-management/shortcodes/#readout
+    
+    
 
 # membuat folder web hugo
 - hugo new site namaweb
