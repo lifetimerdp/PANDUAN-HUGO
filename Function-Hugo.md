@@ -454,7 +454,7 @@ menu digunakan untuk mengatur menu situs. Kita bisa membuat menu bercabang, menu
 
 > Variabel bawaan hugo seperti baseURL, title, copyright, googleAnalytics, dan masih banyak lagi. Dokumentasi lengkapnya https://gohugo.io/getting-started/configuration/#all-configuration-settings
 
-
+# 
 
 # Function
 
