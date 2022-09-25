@@ -331,7 +331,7 @@ Tambahan:
     teks didalam file shortcodes saya, seperti ini:
     
     postingan4.md
-    {{< myshortcodes color="red" >}}
+    {{< myshortcodefile color="red" >}}
     
     myshortcodefile.html
     <p style="color:{{.Get `color`}}">shortcode adalah pintasan</p>
