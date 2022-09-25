@@ -325,7 +325,7 @@ Tambahan:
 
 
 11. Shortcode adalah implementasi kode html khusus untuk folder content. Jadi, kita dapat menggunakan kode html yang telah diatur dengan 
-    memanggil shortcode tertentu.
+    memanggil shortcode tertentu. Cara memanggil shortcode di file markdown adalah dengan memanggil nama filenya {{< myshortcodesfile >}}
 
 
 # membuat folder web hugo
