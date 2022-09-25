@@ -321,7 +321,7 @@ Tambahan:
    menggunakan function di hugo
    
    
-10. 
+10. folder data adalah folder yang digunakan untuk menyimpan data, terutama database versi kecil. Misalnya database dalam bentuk json
 
 
 
