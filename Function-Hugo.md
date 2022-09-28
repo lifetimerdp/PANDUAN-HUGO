@@ -70,11 +70,16 @@ Digunakan untuk mengakses konten atau artikel yang telah di batasi postingannya 
 **Kode dibawah hanya menampilkan artkel berdasarkan batas postingan yang telah diatur di config.toml menggunakan variable paginate = batas postingannya**
 ```
 {{ range .Paginator.Pages }}
-  {{ .Title }}
+	{{ .Title }}
 {{ end }}
 ```
 
-
+{{ if .Paginator.HasPrev }}
+	<a href="{{ .Paginator.Prev.URL }}"> Prev </a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+	<a href="{{ .Paginator.Next.URL }}"> Next </a>
+{{ end }}
 
 ### _Variabel bawaan HUGO untuk file konfigurasi config.toml_
 
