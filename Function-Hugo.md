@@ -2,7 +2,23 @@
 
 # Variabel
 
-### Site.Params.nama-variabel  
+### _Site Variable_
+
+_Site Variable_ adalah variabel khusus yang digunakan untuk mengakses nilai GLOBAL dari situs anda. Sebagai contoh, saya ingin menggunakan deskripsi situs saya untuk ditampilkan di bagian bawah atau footer halaman.
+
+**Atur deskripsi situs di config.toml**
+```
+description = "situs example.com berisi informasi, tips & trik tentang dunia internet dan telekomunikasi."
+```
+
+**Cara mengakses deskripsi situs menggunakan site variable**
+```
+{{ .Site.Description }}
+```
+
+**List Semua Site Variable: https://gohugo.io/variables/site**
+
+### _Site.Params.nama-variabel_
 
 **_nama variabel_** diambil dari file config.toml di Proyek HUGO kalian.  
 
@@ -34,10 +50,35 @@ Maka saya akan menuliskan ini:
 {{ .Site.Params.description }}
 ```
 
-Selain membuat variabel sendiri seperti sebelumnya. Kita juga dapat menggunakan **variabel bawaan HUGO**.  
-Variabel bawaan itu contohnya seperti baseurl, title, languagecode yang terdapat di File **config.toml**.
+### _Page Variable_
 
-### Variabel bawaan HUGO untuk file konfigurasi config.toml  
+_Page Variable_ adalah variabel yang digunakan untuk mengakses halaman pada situs anda. Misalnya anda mempunyai "halaman blog", "article", "sitemap", dan lain-lain.
+
+**Semua Page Variabel: https://gohugo.io/variables/page/**
+
+### .Paginate
+
+Digunakan untuk memasukkan artikel atau postingan ke sistem batasan postingan (pagination) pada halaman. Intinya Ini berhubungan dengan Variabel _.Paginator.Pages_.
+
+**Halaman terkait:**
+- https://gohugo.io/templates/pagination/
+
+### .Paginator
+
+Digunakan untuk mengakses konten atau artikel yang telah di batasi postingannya per halaman. Misalnya seperti kode dibawah
+
+**Kode dibawah hanya menampilkan artkel berdasarkan batas postingan yang telah diatur di config.toml menggunakan variable paginate = batas postingannya**
+```
+{{ range .Paginator.Pages }}
+  {{ .Title }}
+{{ end }}
+```
+
+
+
+### _Variabel bawaan HUGO untuk file konfigurasi config.toml_
+
+_Variabel bawaan Hugo_ adalah variabel yang digunakan khusus untuk file konfigurasi situs (alias file config.toml, config.yaml, atau config.json).
 
 ### archetypeDir
 
