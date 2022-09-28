@@ -462,6 +462,14 @@ menu digunakan untuk mengatur menu situs. Kita bisa membuat menu bercabang, menu
 
 Digunakan untuk memfilter data (berupa array (atau data yang dapat di looping menggunakan function range)) ke hanya nilai yang sesuai atau ke nilai yang ditentukan. Misalnya hanya bagian halaman tertentu seperti halaman "/blog".
 
+
+**contoh penggunaan:**
+
+```html
+{{ range where .Site.Pages "Section" "blog" }}
+	{{ .Title }}
+{{ end }}
+```
 ### Param
 
 Digunakan
