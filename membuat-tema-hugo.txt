@@ -2,6 +2,8 @@ Tutorial dasar menggunakan hugo
 
 sumber belajar: https://gohugo.io/templates/introduction
 
+Lihat tipe data hugo -> https://pkg.go.dev/github.com/gohugoio/hugo/resources/page
+
 [ 1. Variable ]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 1.1 Cara membuat variable di hugo
