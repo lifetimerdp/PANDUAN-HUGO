@@ -458,6 +458,10 @@ menu digunakan untuk mengatur menu situs. Kita bisa membuat menu bercabang, menu
 
 # Function
 
+### where
+
+Digunakan untuk memfilter data (berupa array (atau data yang dapat di looping menggunakan function range)) ke hanya nilai yang sesuai atau ke nilai yang ditentukan. Misalnya hanya bagian halaman tertentu seperti halaman "/blog".
+
 ### Param
 
 Digunakan
