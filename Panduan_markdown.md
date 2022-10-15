@@ -32,7 +32,7 @@
     
 6.  Menyiapkan link agar dapat digunakan berkali-kali  
     ```
-    Kucing adalah [hewan][refHewan] kategori mamalia. [Hewan][refHewan] mamalia adalah [hewan][refHewan] yang menyusui dan melahirkan.
+    Kucing adalah [hewan](refHewan) kategori mamalia. [Hewan](refHewan) mamalia adalah [hewan](refHewan) yang menyusui dan melahirkan.
     [refHewan]: https://id.wikipedia.org/wiki/Hewan
     ```
     
