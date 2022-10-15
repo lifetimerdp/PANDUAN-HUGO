@@ -86,15 +86,10 @@
     
 13. Paragraf di antara list  
     ```
-    1. Harga sepatu
-    
-     Harga sepatu mulai dari 50 ribu sampai dengan 1 juta rupiah.
-     Sesuaikan dengan kemampuan anda.
-     
-    2. Harga sandal
-
-     Harga sandal relatif murah jika dibandingkan dengan harga sepatu.
-     Anda dapat membelinya mulai dari 10 ribu sampai dengan 400 ribu rupiah.
+    1. Harga sepatu  
+     Harga sepatu mulai dari 50 ribu sampai dengan 1 juta rupiah. Sesuaikan dengan kemampuan anda.
+    2. Harga sandal  
+     Harga sandal relatif murah jika dibandingkan dengan harga sepatu. Anda dapat membelinya mulai dari 10 ribu sampai dengan 400 ribu rupiah.
     ```
 
     > "Setiap ingin membuat paragraf di dalam list. Harus membuat baris kosong 1 dan spasi sekali diawal paragraf".
